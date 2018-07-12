@@ -17,9 +17,4 @@ Welcome to EdgePy's documentation!
    CONTRIBUTING
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
