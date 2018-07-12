@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing &mdash; EdgePy 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Planned statistical tests" href="planned_statistical_tests.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> EdgePy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Links.html">Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-formats.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionality.html">Functionality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionality.html#components">Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="planned_statistical_tests.html">Planned statistical tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pr-process-for-project-contributers">PR Process for Project Contributers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-and-code-style">Documentation and Code Style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-tests">Running the tests</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EdgePy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/CONTRIBUTING.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contributing">
+<span id="contributing"></span><h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<p>When contributing to this repository discuss the change you wish to make <em>via</em> this project’s <a class="reference external" href="https://github.com/r-bioinformatics/edgePy/issues">GitHub issues</a> first.</p>
+<div class="section" id="pr-process-for-project-contributers">
+<span id="pr-process-for-project-contributers"></span><h2>PR Process for Project Contributers<a class="headerlink" href="#pr-process-for-project-contributers" title="Permalink to this headline">¶</a></h2>
+<p>Always ensure that you have fetched the most recent material into your local clone.</p>
+<ol class="simple">
+<li>Checkout a branch (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">&lt;branch_name&gt;</span></code>) prefixed with your initials and suffixed with the issue you are addressing or a brief few words describing the feature/bug fix joined by underscores (<code class="docutils literal notranslate"><span class="pre">_</span></code>). Here are valid formats:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">cv_issue_45</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">af_issue_2123</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">cv_fix_requests_regression</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">af_transpose_docs</span></code></li>
+</ul>
+</li>
+<li>Commit changes.</li>
+<li>Execute and create tests regularly. Use <code class="docutils literal notranslate"><span class="pre">py.test</span></code>.</li>
+<li>Request informal review from peers by pointing them to your branch.</li>
+<li>Create a Pull Request against <code class="docutils literal notranslate"><span class="pre">master</span></code> when a formal review is needed.</li>
+<li>Optionally, squash commits and reword messages as needed for easier review.</li>
+<li>Ensure all continuous integration (CI) tests and code reviews pass before rebasing (or squashing and then rebasing) onto <code class="docutils literal notranslate"><span class="pre">master</span></code>.<ul>
+<li>Avoid directly merging a PR onto <code class="docutils literal notranslate"><span class="pre">master</span></code> without first rebasing.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="documentation-and-code-style">
+<span id="documentation-and-code-style"></span><h2>Documentation and Code Style<a class="headerlink" href="#documentation-and-code-style" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li>Strictly adhere to PEP8. Code will not be linted although all reviewers will check for style adherence.</li>
+<li>Use <a class="reference external" href="http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html">Google Style</a> docstrings.</li>
+<li>Implement doctests.</li>
+<li>Provide accurate type annotations.</li>
+<li>Limit line lengths to 100 columns.</li>
+</ol>
+<p>An example function showcasing the above requirements:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_dataset_path</span><span class="p">(</span>
+    <span class="n">filename</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Path</span><span class="p">],</span>
+    <span class="n">dead_arg</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span><span class="o">=</span><span class="bp">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Example function with PEP 484 type annotations.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        filename: The first parameter.</span>
+<span class="sd">        dead_arg: The second parameter.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The path to the dataset, may not really exist.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; from module.io import get_dataset_path</span>
+<span class="sd">        &gt;&gt;&gt; str(get_dataset_path(&quot;GSE49712_HTSeq.txt.gz&quot;))  # doctest:+ELLIPSIS</span>
+<span class="sd">        &#39;.../data/GSE49712_HTSeq.txt.gz&#39;</span>
+
+<span class="sd">    Notes:</span>
+<span class="sd">        1. See ``module.rationalize`` for an equivalent method.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">module</span>
+    <span class="n">directory</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">module</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">expanduser</span><span class="p">()</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span>
+    <span class="k">return</span> <span class="n">directory</span> <span class="o">/</span> <span class="s1">&#39;data&#39;</span> <span class="o">/</span> <span class="n">filename</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-the-tests">
+<span id="running-the-tests"></span><h2>Running the tests<a class="headerlink" href="#running-the-tests" title="Permalink to this headline">¶</a></h2>
+<p>Make sure to have all test dependencies installed by installing the <code class="docutils literal notranslate"><span class="pre">ci</span></code> requirement group <em>e.g.</em>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>❯ pip install -e <span class="s1">&#39;edgePy[ci]&#39;</span>
+</pre></div>
+</div>
+<p>Run the tests with the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>❯ <span class="nb">cd</span> edgePy
+❯ ./tests/test-runner.sh
+❯ ./tests/mypy.sh
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="planned_statistical_tests.html" class="btn btn-neutral" title="Planned statistical tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, R-Bioinformatics.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
